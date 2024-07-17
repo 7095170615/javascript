@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+0<html lang="en">
+<head>
+    
+    <title>javascript</title>
+</head>
+<body>
+   <h1>radio button validation<h1>
+    <form action="loginsuccess.html"id="radioform" onsubmit="return validateform()">
+       <input type="radio" name="gender" value="male">male <br>
+     <input type="radio"name="gender" value="female">female <br>
+     <input type="radio"name="gender"value="other">other <br>
+     <input type="submit"value="submit">
+    </form>
+    <script>
+        function validateform(){
+            const radiobuttons=document.getElementsByName('gender');
+            let checkedbutton=false;
+            for(let i=0; i<radiobuttons.length;i++){
+                if (radiobuttons[i].checked)
+                {
+                    checkedbutton=true;
+                    break;
+
+                }
+               
+         
+            }
+            if(!checkedbutton){
+                    alert("please select a gender");
+                    return false;
+                }
+                return true;
+        }
+    </script>
+        
+    
+    
+</body>
+</html>``````````````                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 

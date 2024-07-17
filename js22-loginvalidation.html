@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>javascript</title>
+</head>
+<script>
+    function myfunction1(){
+          var uname=document.myform.username.value;
+          var password=document.myform.password.value;
+          if(uname==null || uname=="")
+          {
+            alert("name cant be empty");
+           return false;
+    
+          } 
+          else if(password.length<6){
+            alert("password must be 6 letters");
+            return false;
+          }
+          else{
+            return true;
+          }
+    }
+</script>
+<body>
+   <h1>login page<h1>
+    <form name="myform"action="loginsuccess.html"onsubmit="return myfunction1(this)">
+        user name:<input type="text"name="username" ><br>
+        password:<input type="pass"name="password"> <br>
+        <input type="submit"value="submit">
+    </form>
+   
+    
+</body>
+</html>
